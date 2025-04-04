@@ -1,16 +1,59 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form id="my-form">
+        <h1>Internship Form</h1>
+        <label for="fname">First Name</label>
+        <br>
+        <input id="first-name-input" type="text" name="fname" required="Yes">
 
+        <br>
+        <label for="lname">Last Name</label>
+        <br>
+        <input id="last-name-input" type="text" name="lname" required="Yes">
+		
+        <br>
+        <label for="email">Email Address</label>
+        <br>
+        <input id="email-input" type="email" name="email" required="Yes">
+
+        <br>
+        <label for="college">College</label>
+        <br>
+        <input id="college-input" type="text" name="college" required="Yes">
+      
+        <br>
+        <label for="graduation-input">Graduation Year</label>
+        <br>
+        <select id="graduation-input" name="graduation-input" required="Yes">
+            <option value="" disabled selected>Choose...</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+        
+        <br>
+        <label for="roll-no-input">Roll No.</label>
+        <br>
+        <input id="roll-no-input" type="roll-no-input" required="Yes">
+
+        <br>
+        <label for="conditions-checkbox">Agree to terms and conditions</label>
+        <br>
+        <input id="conditions-checkbox" type="checkbox" required="Yes">
+
+        <br>
+        <button>Submit form</button>
+    </form>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
