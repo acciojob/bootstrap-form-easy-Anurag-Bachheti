@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,27 +20,27 @@
 		<div class="invalid-feedback">Please enter a valid first name.</div>
         
 		<br>
-        <label for="last-name-input" class="form-control">Last Name</label>
+        <label for="last-name-input" class="form-label">Last Name</label>
         <br>
         <input id="last-name-input" type="text" name="last-name-input" class="form-control" required>
 		<div class="invalid-feedback">Please enter a valid last name.</div>
         
 		<br>
-        <label for="email-input" class="form-control">Email Address</label>
+        <label for="email-input" class="form-label">Email Address</label>
         <br>
         <input id="email-input" type="email" name="email-input" class="form-control" required>
 		<div class="invalid-feedback">Please enter a valid email.</div>
 		
         <br>
-        <label for="college-input" class="form-control">College</label>
+        <label for="college-input" class="form-label">College</label>
         <br>
         <input id="college-input" type="text" name="college-input" class="form-control" required>
 	    <div class="invalid-feedback">Please enter a valid college.</div>
         
 		<br>
-        <label for="graduation-input" class="form-control">Graduation Year</label>
+        <label for="grad-year-select" class="form-label">Graduation Year</label>
         <br>
-        <select id="grad-year-select" name="graduation-input" class="form-control" required>
+        <select id="grad-year-select" name="grad-year-select" class="form-select" required>
             <option value="" disabled selected>Choose...</option>
             <option value="2020">2020</option>
             <option value="2021">2021</option>
@@ -46,18 +50,18 @@
         <div class="invalid-feedback">Please select a graduation year.</div>
 		
         <br>
-        <label for="roll-no-input" class="form-control">Roll No.</label>
+        <label for="roll-no-input" class="form-label">Roll No.</label>
         <br>
         <input id="roll-no-input" type="text" name="roll-no-input" class="form-control" required>
 		<div class="invalid-feedback">Please enter a valid roll number.</div>
 		
         <br>
-        <label for="conditions-checkbox" class="form-control">Agree to terms and conditions</label>
+        <label for="conditions-checkbox" class="form-check-label">Agree to terms and conditions</label>
         <br>
-        <input id="conditions-checkbox" type="checkbox" class="form-control" required>
+        <input id="conditions-checkbox" type="checkbox" class="form-check-input" required>
 
         <br>
-        <button>Submit form</button>
+        <button type="submit" class="btn btn-primary">Submit form</button>
     </form>
 
     <script src="script.js"></script>
